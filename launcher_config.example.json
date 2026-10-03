@@ -1,0 +1,45 @@
+{
+  "programs": [
+    {
+      "name": "My Flask App",
+      "path": "C:/Projects/my-flask-app/app.py",
+      "description": "Web app on port 5000",
+      "interpreter": "",
+      "extra_cmd": "",
+      "extra_cmd2": "",
+      "extra_cmd3": "",
+      "workdir": "",
+      "port": "5000",
+      "autostart": true,
+      "auto_restart": true
+    },
+    {
+      "name": "Node API + ngrok",
+      "path": "",
+      "description": "node server.js, exposed through an ngrok tunnel",
+      "interpreter": "",
+      "extra_cmd": "node server.js",
+      "extra_cmd2": "ngrok http 3001",
+      "extra_cmd3": "",
+      "workdir": "C:/Projects/my-node-api",
+      "port": "3001",
+      "autostart": false,
+      "auto_restart": true,
+      "tunnel_watch": true,
+      "health_urls": ["http://127.0.0.1:3001/health"]
+    },
+    {
+      "name": "Telegram Bot",
+      "path": "C:/Projects/my-bot/bot.py",
+      "description": "Runs inside its own virtual environment",
+      "interpreter": "C:/Projects/my-bot/.venv/Scripts/python.exe",
+      "extra_cmd": "",
+      "extra_cmd2": "",
+      "extra_cmd3": "",
+      "workdir": "C:/Projects/my-bot",
+      "port": "",
+      "autostart": true,
+      "auto_restart": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+# Your own program list
+launcher_config.json
+launcher_config.json.bak*
+
+# PyInstaller output
+build/
+dist/
